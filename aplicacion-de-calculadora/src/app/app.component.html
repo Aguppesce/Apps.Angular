@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="col">
+    <h3>{{titulo}}</h3>
+  </div>
+  <hr />
+  <app-formulario
+   (operacionCreada)="procesarResultado($event)"></app-formulario>
+  <app-resultado [resultadoHijo] = "resultadoPadre">
+  </app-resultado>
+</div>
+
+
+
+<!--Solución Video
+<div class="container">
+  <h1>{{mensaje}}</h1>
+  <form>
+    <div class="form-group">
+      <label>Operando A</label>
+      <input type="number" class="form-control" 
+      placeholder="Escribe Operando A" [(ngModel)]="operandoA" name="operandoA"/>
+      <label>Operando B</label>
+      <input type="number" class="form-control" 
+      placeholder="Escribe Operando B" [(ngModel)]="operandoA" name="operandoB"/>
+    </div>
+    <button type="submit" class="btn btn-primay"
+    (click)="sumar()"></button>
+  </form>
+  <p>Resultado: {{calculo}}</p>
+</div>
+-->

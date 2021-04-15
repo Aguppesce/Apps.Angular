@@ -1,0 +1,27 @@
+<form class="form-row">
+    <div class="form-group col-md-2">
+      <label for="operandoa" class="sr-only">Operando A</label>
+      <input 
+        type="number"
+        name="operandoa" 
+        id="operandoa" 
+        placeholder="Escribe Operando A" 
+        class="form-control" 
+        [(ngModel)]="operandoA">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="operandob" class="sr-only">Operando B</label>
+      <input 
+        type="number" 
+        name="operandob" 
+        id="operandob" 
+        placeholder="Escribe Operando B" 
+        class="form-control"
+        [(ngModel)]="operandoB">
+    </div>
+    <div class="col">
+      <button type="submit" class="btn btn-primary" (click)="sumar()">
+        Sumar
+      </button>
+    </div>
+  </form>
